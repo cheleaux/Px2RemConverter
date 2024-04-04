@@ -1,5 +1,7 @@
 #!/bin/bash
 
-cd /c/Users/Student/scripts
+pwd=$(pwd)
 
-python remconverter.py $1
+cd /c/Users/Nazareth/bin/PxToRemConverter/
+
+python remconverter.py $1 $pwd
