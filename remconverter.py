@@ -48,6 +48,7 @@ with open( file, 'r+' ) as fileOpen:
         fileOpen.truncate()
         print(f'{ fileName } has been successfully converted to a Rem unit file.')
     except( OSError, IOError ) as error:
+        print('Conversion unsuccessful!')
         logger = logging.getLogger(__name__)
         logger.error( error )
         raise
